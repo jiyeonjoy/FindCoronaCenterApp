@@ -14,6 +14,8 @@
 		DAC82C442A299A98002C68CC /* FindCoronaCenterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C432A299A98002C68CC /* FindCoronaCenterAppTests.swift */; };
 		DAC82C4E2A299A98002C68CC /* FindCoronaCenterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C4D2A299A98002C68CC /* FindCoronaCenterAppUITests.swift */; };
 		DAC82C502A299A98002C68CC /* FindCoronaCenterAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C4F2A299A98002C68CC /* FindCoronaCenterAppUITestsLaunchTests.swift */; };
+		DAC82C5E2A299BCD002C68CC /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C5D2A299BCD002C68CC /* CenterAPIResponse.swift */; };
+		DAC82C602A299BEA002C68CC /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C5F2A299BEA002C68CC /* Center.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		DAC82C492A299A98002C68CC /* FindCoronaCenterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoronaCenterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC82C4D2A299A98002C68CC /* FindCoronaCenterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterAppUITests.swift; sourceTree = "<group>"; };
 		DAC82C4F2A299A98002C68CC /* FindCoronaCenterAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAC82C5D2A299BCD002C68CC /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
+		DAC82C5F2A299BEA002C68CC /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				DAC82C322A299A97002C68CC /* FindCoronaCenterAppApp.swift */,
 				DAC82C342A299A97002C68CC /* ContentView.swift */,
+				DAC82C5C2A299BB6002C68CC /* Entities */,
 				DAC82C362A299A98002C68CC /* Assets.xcassets */,
 				DAC82C382A299A98002C68CC /* Preview Content */,
 			);
@@ -125,6 +130,15 @@
 				DAC82C4F2A299A98002C68CC /* FindCoronaCenterAppUITestsLaunchTests.swift */,
 			);
 			path = FindCoronaCenterAppUITests;
+			sourceTree = "<group>";
+		};
+		DAC82C5C2A299BB6002C68CC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DAC82C5D2A299BCD002C68CC /* CenterAPIResponse.swift */,
+				DAC82C5F2A299BEA002C68CC /* Center.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC82C602A299BEA002C68CC /* Center.swift in Sources */,
 				DAC82C352A299A97002C68CC /* ContentView.swift in Sources */,
+				DAC82C5E2A299BCD002C68CC /* CenterAPIResponse.swift in Sources */,
 				DAC82C332A299A97002C68CC /* FindCoronaCenterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +471,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
